@@ -9,36 +9,23 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Awake',
-  tagline: 'A Nuxt.js Theme for Netlify CMS',
-  featureImage: '/uploads/home-hero.jpg',
-  logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
+  siteName: 'Cash Keeps You Accountable',
+  tagline:
+    'Bet with your friends to hold each other accountable for your fitness goals!',
+  featureImage: '/uploads/gymhome.jpeg',
+  logo: '/logo2.png', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
-    id: process.env.GOOGLE_ANALYTICS_ID
+    id: 'G-7B0W6FP1JG'
   },
   mainMenu: [
     {
-      name: 'About',
-      link: '/about'
+      name: 'How It Works',
+      link: '/#about'
     },
     {
       name: 'Contact',
-      link: '/contact'
-    },
-    {
-      name: 'Categories',
-      link: '/categories'
-    },
-    {
-      name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
-      target: '_blank'
+      link: '/#contact'
     }
   ],
   hero: {
@@ -59,7 +46,7 @@ export default {
 
   // Disqus
   disqus: {
-    on: true,
+    on: false,
     loadingStrategy: 'button', // Options: onload, lazy, button
     siteShortName: 'blog-danielkelly-io' // 'blog-danielkelly-io'
   },
@@ -67,14 +54,14 @@ export default {
   // Newsletter Subscribe
   newsletter: {
     on: true,
-    heading: 'Subscribe to Our Newsletter',
-    btnText: 'Subscribe',
+    heading: 'Sign up for early access',
+    btnText: 'Get Access',
     // Can be the form action on a mail chimp form, a hubspot form,
     // or any other url you want to post the form data to
     mailchimp: {
       on: true,
       formAction:
-        'https://danielkelly.us3.list-manage.com/subscribe/post?u=d3c2e762b66a2353d0bc29bf3&amp;id=2abeaa06e0'
+        'https://app.us6.list-manage.com/subscribe/post?u=e68806e3e44bc294d04e64fbc&amp;id=3c7e7f316b'
     },
     custom: {
       on: false,
@@ -92,7 +79,7 @@ export default {
 
   // Posts
   posts: {
-    on: true,
+    on: false,
     theme: null, // See card.theme (can be unique for posts if set here)
     imageDimensions: null, // See card.imageDimensions (can be unique for posts if set here)
     displayAuthor: true,

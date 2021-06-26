@@ -1,7 +1,7 @@
 <template>
   <div>
     <form
-      target="_blank"
+      target="_self"
       method="post"
       :action="formAction"
       @submit="$emit('submit', email)"
