@@ -44,9 +44,9 @@ export default {
     }
   },
   components: {
-    NewsLetterFormModal,
     AboutSection,
-    ContactForm
+    ContactForm,
+    NewsLetterFormModal
   },
   computed: {
     ...mapState(['title', 'subtitle', 'featureImage'])

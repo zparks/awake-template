@@ -50,7 +50,7 @@ export default {
 
   // Disqus
   disqus: {
-    on: false,
+    on: true,
     loadingStrategy: 'button', // Options: onload, lazy, button
     siteShortName: 'blog-danielkelly-io' // 'blog-danielkelly-io'
   },
@@ -83,7 +83,7 @@ export default {
 
   // Posts
   posts: {
-    on: false,
+    on: true,
     theme: null, // See card.theme (can be unique for posts if set here)
     imageDimensions: null, // See card.imageDimensions (can be unique for posts if set here)
     displayAuthor: true,
