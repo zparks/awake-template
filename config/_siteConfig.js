@@ -20,6 +20,10 @@ export default {
   },
   mainMenu: [
     {
+      name: 'Home',
+      link: '/'
+    },
+    {
       name: 'How It Works',
       link: '/#about'
     },

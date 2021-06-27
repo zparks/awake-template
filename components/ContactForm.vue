@@ -4,7 +4,7 @@
       <h2 style="text-align:center">Contact Us</h2>
       <p style="text-align:center">
         Submit the form below or email us at
-        <a href="mailto: support@gymbet.app">support@gymbet.app</a>.
+        <a href="mailto: support@gymbet.app">support@gymbet.app</a>
       </p>
       <form name="contact" action="/thanks">
         <!-- Name -->
