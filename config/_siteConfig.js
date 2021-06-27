@@ -9,9 +9,9 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Cash Keeps You Accountable',
+  siteName: 'GymBet',
   tagline:
-    'Bet with your friends to hold each other accountable for your fitness goals!',
+    'GymBet will help you and your friends meet your fitness goals by putting cash on the line!',
   featureImage: '/uploads/gymhome.jpeg',
   logo: '/logo2.png', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
@@ -22,6 +22,10 @@ export default {
     {
       name: 'How It Works',
       link: '/#about'
+    },
+    {
+      name: 'Features',
+      link: '/#features'
     },
     {
       name: 'Contact',

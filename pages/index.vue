@@ -1,6 +1,10 @@
 <template>
   <div id="home-page" class="page-wrapper home-page">
-    <site-hero :title="title" :subtitle="subtitle" :image="featureImage">
+    <site-hero
+      title="Cash For Accountability"
+      :subtitle="subtitle"
+      :image="featureImage"
+    >
       <button
         v-if="$siteConfig.newsletter.on"
         class="button is-primary"
@@ -11,7 +15,8 @@
     </site-hero>
     <main-section theme="one-column">
       <template v-slot:default>
-        <about-section id="about" />
+        <about-section />
+        <br />
         <contact-form id="contact" />
         <!-- All Posts -->
         <!-- <posts-grid /> -->

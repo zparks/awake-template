@@ -39,9 +39,9 @@
             {{ item.name }}
           </component>
         </li>
-        <li class="navbar-item site-search-wrapper">
+        <!-- <li class="navbar-item site-search-wrapper">
           <site-search />
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>

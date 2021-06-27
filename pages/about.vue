@@ -45,7 +45,9 @@
         <div class="tile is-ancestor">
           <div class="tile is-parent">
             <article class="tile is-child box">
-              <p class="title">Cool Stuff We Do</p>
+              <p class="title">
+                Cool Stuff We Do
+              </p>
               <p class="subtitle">Sooo Cool</p>
               <figure class="image is-1by1">
                 <opti-image width="500" height="500" />
