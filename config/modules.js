@@ -1,17 +1,17 @@
 import URL from 'url-parse'
 import siteConfig from './_siteConfig'
-// let url = false
-// let axiosSettings = {}
-// if (process.env.URL && process.argv[2] === 'generate') {
-//   url = new URL(process.env.URL)
-//   axiosSettings = {
-//     baseURL: 'https://www.gymbet.app/'
-//   }
-// }
-
-let axiosSettings = {
-  baseURL: 'https://www.gymbet.app/'
+let url = false
+let axiosSettings = {}
+if (process.env.URL && process.argv[2] === 'generate') {
+  url = new URL(process.env.URL)
+  axiosSettings = {
+    baseURL: url
+  }
 }
+//NOT WORKING
+// let axiosSettings = {
+//   baseURL: 'https://www.gymbet.app/'
+// }
 
 export const modules = [
   // Doc: https://axios.nuxtjs.org/usage
