@@ -6,7 +6,7 @@
         Submit the form below or email us at
         <a href="mailto: support@gymbet.app">support@gymbet.app</a>
       </p>
-      <form name="contact" action="/thanks">
+      <form name="contact" method="POST" data-netlify="true" action="/thanks">
         <!-- Name -->
         <div class="field">
           <label class="label is-medium">Name</label>
@@ -56,13 +56,7 @@
           </div>
         </div>
         <div class="control">
-          <button
-            type="submit"
-            @click.stop.prevent="send"
-            class="button is-primary"
-          >
-            Contact Us
-          </button>
+          <button type="submit" class="button is-primary">Contact Us</button>
         </div>
       </form>
     </div>
@@ -70,28 +64,28 @@
 </template>
 
 <script>
-export default {
-  data: () => ({
-    email: '',
-    name: '',
-    message: ''
-  }),
-  methods: {
-    send() {
-      this.$mail.send({
-        from: this.email,
-        subject: 'Contact form message',
-        text:
-          'From: ' +
-          this.name +
-          '\n\n' +
-          'Email: ' +
-          this.email +
-          '\n\n' +
-          this.message
-      })
-      this.$router.push('/thanks')
-    }
-  }
-}
+// export default {
+//   data: () => ({
+//     email: '',
+//     name: '',
+//     message: ''
+//   }),
+//   methods: {
+//     send() {
+//       this.$mail.send({
+//         from: this.email,
+//         subject: 'Contact form message',
+//         text:
+//           'From: ' +
+//           this.name +
+//           '\n\n' +
+//           'Email: ' +
+//           this.email +
+//           '\n\n' +
+//           this.message
+//       })
+//       this.$router.push('/thanks')
+//     }
+//   }
+// }
 </script>
