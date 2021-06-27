@@ -7,6 +7,7 @@
         <a href="mailto: support@gymbet.app">support@gymbet.app</a>
       </p>
       <form name="contact" method="POST" data-netlify="true" action="/thanks">
+        <input type="hidden" name="formcontact" :value="contact" />
         <!-- Name -->
         <div class="field">
           <label class="label is-medium">Name</label>
