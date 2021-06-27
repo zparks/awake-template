@@ -6,7 +6,7 @@
         Submit the form below or email us at
         <a href="mailto: support@gymbet.app">support@gymbet.app</a>.
       </p>
-      <form name="contact" method="POST" netlify>
+      <form name="contact">
         <!-- Name -->
         <div class="field">
           <label class="label is-medium">Name</label>
