@@ -6,7 +6,7 @@
         Submit the form below or email us at
         <a href="mailto: support@gymbet.app">support@gymbet.app</a>.
       </p>
-      <form name="contact">
+      <form name="contact" action="/thanks">
         <!-- Name -->
         <div class="field">
           <label class="label is-medium">Name</label>
@@ -14,8 +14,10 @@
             <input
               class="input is-medium"
               type="text"
+              id="name"
               name="name"
               placeholder="Your Name"
+              v-model="name"
             />
             <span class="icon is-small is-left">
               <font-awesome-icon icon="user" />
@@ -30,7 +32,9 @@
               class="input is-medium"
               type="email"
               placeholder="you@email.com"
+              id="email"
               name="email"
+              v-model="email"
             />
             <span class="icon is-small is-left">
               <font-awesome-icon icon="envelope" />
@@ -45,12 +49,18 @@
               class="textarea"
               placeholder="Detailed description of your comment, request, or question"
               rows="8"
+              id="message"
               name="message"
+              v-model="message"
             ></textarea>
           </div>
         </div>
         <div class="control">
-          <button type="submit" class="button is-primary">
+          <button
+            type="submit"
+            @click.stop.prevent="send"
+            class="button is-primary"
+          >
             Contact Us
           </button>
         </div>
@@ -58,3 +68,30 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    email: '',
+    name: '',
+    message: ''
+  }),
+  methods: {
+    send() {
+      this.$mail.send({
+        from: this.email,
+        subject: 'Contact form message',
+        text:
+          'From: ' +
+          this.name +
+          '\n\n' +
+          'Email: ' +
+          this.email +
+          '\n\n' +
+          this.message
+      })
+      this.$router.push('/thanks')
+    }
+  }
+}
+</script>

@@ -15,13 +15,28 @@ export const modules = [
   '@nuxtjs/eslint-module',
   '@nuxtjs/style-resources',
   'nuxt-fontawesome',
-  'nuxt-responsive-loader'
+  'nuxt-responsive-loader',
+  'nuxt-mail'
 ]
 if (siteConfig.googleAnalytics.on && siteConfig.googleAnalytics.id) {
   modules.push('@nuxtjs/google-gtag')
 }
 
 export const modulesSettings = {
+  mail: {
+    message: {
+      to: siteConfig.email
+    },
+    secure: true, //ssl
+    smtp: {
+      host: siteConfig.emailhost,
+      port: siteConfig.emailport,
+      auth: {
+        user: siteConfig.email,
+        pass: siteConfig.emailpass
+      }
+    }
+  },
   fontawesome: {
     imports: [
       {

@@ -15,6 +15,7 @@
       fails, then their money goes to the groups' pot to be disbursed evenly!
     </p>
 
+    <br />
     <h2 id="features" class="has-text-centered">Features</h2>
     <div class="columns">
       <div class="column has-text-centered">
@@ -34,7 +35,7 @@
       </div>
       <div class="column has-text-centered">
         <font-awesome-icon icon="map-marker-alt" class="is-size-1" />
-        <h4>GPS check-ins</h4>
+        <h4>GPS Check-ins</h4>
         <p>
           Of course your time at the gym will need to be verified to see who's
           slacking and who's succeeding in your group!

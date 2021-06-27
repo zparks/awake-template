@@ -16,7 +16,7 @@ export default {
   logo: '/logo2.png', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
-    id: 'G-7B0W6FP1JG'
+    id: process.env.GOOGLE_ANALYTICS_ID
   },
   mainMenu: [
     {
@@ -32,6 +32,12 @@ export default {
       link: '/#contact'
     }
   ],
+
+  emailhost: 'smtp.gmail.com',
+  emailport: '465',
+  email: 'gymbetapp@gmail.com',
+  emailpass: process.env.EMAILPASS,
+
   hero: {
     theme: 'dark' // options: mist, light, dark
   },
