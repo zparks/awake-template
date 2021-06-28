@@ -3,9 +3,9 @@
     <h2 id="about" style="text-align:center">How It Works</h2>
     <p>
       GymBet is a mobile app that'll help to hold you and your friends
-      accountable! The app tracks your gym visits throughout the week to ensure
-      your fitness goals are on track and you'll have something to lose if you
-      don't hold up your end of the bargain, and something to gain if you do!
+      accountable. The app tracks your gym visits throughout the week to ensure
+      your fitness goals are on track and you'll have something to lose if not.
+      If you do hold up your end of the bargain, you could be rewarded!
       <br />
       <br />
       Here's an example: You and three friends want to hold each other

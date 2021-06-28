@@ -1,7 +1,7 @@
 <template>
   <div id="home-page" class="page-wrapper home-page">
     <site-hero
-      title="Cash For Accountability"
+      :title="$siteConfig.indexh1"
       :subtitle="subtitle"
       :image="featureImage"
     >

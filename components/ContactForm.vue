@@ -18,7 +18,6 @@
               id="name"
               name="name"
               placeholder="Your Name"
-              v-model="name"
             />
             <span class="icon is-small is-left">
               <font-awesome-icon icon="user" />
@@ -35,7 +34,6 @@
               placeholder="you@email.com"
               id="email"
               name="email"
-              v-model="email"
             />
             <span class="icon is-small is-left">
               <font-awesome-icon icon="envelope" />
@@ -52,7 +50,6 @@
               rows="8"
               id="message"
               name="message"
-              v-model="message"
             ></textarea>
           </div>
         </div>

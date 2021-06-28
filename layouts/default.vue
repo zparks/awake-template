@@ -32,7 +32,7 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.$store.state.title
+          content: `${this.$store.state.title} | ${this.$siteConfig.indexh1} | ${this.$siteConfig.tagline}`
         },
         {
           hid: 'og:image',

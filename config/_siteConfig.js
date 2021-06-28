@@ -10,6 +10,7 @@ import theCMS from '../cms/netlify/cms'
  */
 export default {
   siteName: 'GymBet',
+  indexh1: 'Cash For Accountability',
   tagline:
     'GymBet will help you and your friends meet your fitness goals by putting cash on the line!',
   featureImage: '/uploads/gymhome.jpeg',
