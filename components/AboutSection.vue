@@ -2,7 +2,7 @@
   <div class="content">
     <h2 id="about" style="text-align:center">How It Works</h2>
     <p>
-      GymBet is an mobile app that'll help to hold you and your friends
+      GymBet is a mobile app that'll help to hold you and your friends
       accountable! The app tracks your gym visits throughout the week to ensure
       your fitness goals are on track and you'll have something to lose if you
       don't hold up your end of the bargain, and something to gain if you do!

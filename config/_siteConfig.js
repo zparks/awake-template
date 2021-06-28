@@ -37,10 +37,10 @@ export default {
     }
   ],
 
-  emailhost: 'smtp.gmail.com',
-  emailport: '465',
-  email: 'gymbetapp@gmail.com',
-  emailpass: process.env.EMAILPASS,
+  // emailhost: 'smtp.gmail.com',
+  // emailport: '465',
+  // email: 'gymbetapp@gmail.com',
+  // emailpass: process.env.EMAILPASS,
 
   hero: {
     theme: 'dark' // options: mist, light, dark
