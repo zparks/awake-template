@@ -13,9 +13,9 @@
           <label class="label is-medium">Name</label>
           <div class="control has-icons-left">
             <input
+              id="name"
               class="input is-medium"
               type="text"
-              id="name"
               name="name"
               placeholder="Your Name"
             />
@@ -29,10 +29,10 @@
           <label class="label is-medium">Email</label>
           <div class="control has-icons-left">
             <input
+              id="email"
               class="input is-medium"
               type="email"
               placeholder="you@email.com"
-              id="email"
               name="email"
             />
             <span class="icon is-small is-left">
@@ -45,10 +45,10 @@
           <label class="label is-medium">Message</label>
           <div class="control">
             <textarea
+              id="message"
               class="textarea"
               placeholder="Detailed description of your comment, request, or question"
               rows="8"
-              id="message"
               name="message"
             ></textarea>
           </div>
